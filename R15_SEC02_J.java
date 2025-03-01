@@ -4,7 +4,7 @@ public RandomAccessFile openFile(java.io.File f) {
   // ...
   return (RandomAccessFile)AccessController.doPrivileged(new PrivilegedAction <Object>() {
     public Object run() {
-      return new RandomAccessFile(copy, copy.getPath()); bfdjsf
+      return new RandomAccessFile(copy, copy.getPath());
     }
   });
 }
